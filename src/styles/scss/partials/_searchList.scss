@@ -1,0 +1,21 @@
+#search-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 90vh;
+
+    & img {
+        width: 250px;
+        margin: 30px 20px;
+        transition: 1.2s;
+        border-radius: 5px;
+        
+        &:hover {
+            box-shadow: 0 0 50px red;
+            width: 253px;
+            position: relative;
+            z-index: 99;
+        }
+    }
+}

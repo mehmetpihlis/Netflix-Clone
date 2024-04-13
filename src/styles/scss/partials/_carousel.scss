@@ -1,0 +1,27 @@
+.carousel {
+    & > .carousel-inner > .carousel-item {
+        padding: 0 50px;
+    }
+
+    & .movie-card {
+        border: 2px solid red;
+    }
+    & img {
+        width: 250px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin: 5px 15px;
+        transition: 0.5s;
+
+        &:hover {
+            border-radius: 10px;
+            box-shadow: 0 0 50px $primary-color;
+        }
+    }
+    
+    & > button {
+        background-color: transparent;
+        border: none;
+        width: 50px;
+    }
+}

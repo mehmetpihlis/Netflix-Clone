@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+@import "./partials/variables";
+@import "./partials/navbar";
+@import "./partials/home";
+@import "./partials/carousel";
+@import "./partials/header";
+@import "./partials/movieDetail";
+@import "./partials/searchList";
+@import "./partials/scrollbar";
+@import "./partials/sidebar";
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 80px;
+  font-family: $font;
+  background-color: $secondary-color;
+  color: white;
+}
+
+.mt-68 {
+  margin-top: 68px;
+}
+

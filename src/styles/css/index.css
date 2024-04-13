@@ -1,0 +1,313 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+nav {
+  background: linear-gradient(180deg, #060606, #141414);
+  color: aliceblue;
+  height: 68px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 0 45px;
+  transition: width 0.5s ease;
+  z-index: 99;
+}
+nav > .primary-navigation {
+  display: flex;
+  align-items: center;
+}
+nav > .primary-navigation > .logo-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav > .primary-navigation > .logo-space > img {
+  width: 120px;
+}
+nav > .primary-navigation > .navigation-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+}
+nav > .primary-navigation > .navigation-list > li {
+  font-size: 14px;
+  margin: 0 10px;
+}
+nav > .primary-navigation > .navigation-list > li > a {
+  text-decoration: none;
+  color: white;
+}
+nav > .primary-navigation > .navigation-list > li > a:hover {
+  color: #B6B5B4;
+  transition: 0.65s;
+}
+nav > .primary-navigation > .navigation-list > li > .active {
+  font-weight: bold;
+}
+nav > .secondary-navigation {
+  display: flex;
+  align-items: center;
+}
+nav > .secondary-navigation > .search-bar {
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 35.6px;
+  width: 274.6px;
+}
+nav > .secondary-navigation > .search-bar > button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 28px;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav > .secondary-navigation > .search-bar > input {
+  height: inherit;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  width: 212px;
+}
+nav > .secondary-navigation > .search-bar > .close {
+  width: 0;
+}
+nav > .secondary-navigation > .active-search {
+  border: 1px solid white;
+  width: 265px;
+  background-color: #060606;
+}
+nav > .secondary-navigation > button {
+  display: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #E50913;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 450px) {
+  #navlist, #searchbar {
+    display: none;
+  }
+  #toogleBtn {
+    display: inline-block;
+  }
+}
+.home {
+  height: 100vh;
+  background-color: #141414;
+}
+
+.carousel > .carousel-inner > .carousel-item {
+  padding: 0 50px;
+}
+.carousel .movie-card {
+  border: 2px solid red;
+}
+.carousel img {
+  width: 250px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 5px 15px;
+  transition: 0.5s;
+}
+.carousel img:hover {
+  border-radius: 10px;
+  box-shadow: 0 0 50px #E50913;
+}
+.carousel > button {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+}
+
+header {
+  background-color: aqua;
+  height: 115vh;
+  width: 100%;
+  background-color: transparent;
+  background-image: url("https://million-wallpapers.com/wallpapers/5/63/445811478925978/a-group-of-people-from-a-hobbit-movie.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+header > div {
+  width: 50%;
+  margin: 0 80px;
+}
+header #header-control > button {
+  margin: 4px;
+  padding: 8px 22px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+}
+header #header-control > #playBtn {
+  background-color: white;
+  color: #141414;
+  font-weight: 600;
+}
+header #header-control > #playBtn:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+header #header-control > #infoBtn {
+  color: white;
+  background-color: rgba(120, 120, 120, 0.7);
+}
+header #header-control > #infoBtn:hover {
+  background-color: rgba(120, 120, 120, 0.5);
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    flex-direction: column;
+    height: 70vh;
+  }
+  header .header-content {
+    margin-top: 100px;
+    width: 80%;
+  }
+  header #group {
+    display: none;
+  }
+}
+#movie-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#movie-detail > div {
+  margin: 10px 150px;
+}
+#movie-detail > #poster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+#movie-detail > #poster > img {
+  width: 400px;
+}
+#movie-detail > #content {
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 450px) {
+  #movie-detail {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  #movie-detail > #poster {
+    width: 80%;
+    margin: 20px auto;
+  }
+  #movie-detail > #poster > img {
+    width: 350px;
+  }
+  #movie-detail > #content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+  }
+}
+#search-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 90vh;
+}
+#search-list img {
+  width: 250px;
+  margin: 30px 20px;
+  transition: 1.2s;
+  border-radius: 5px;
+}
+#search-list img:hover {
+  box-shadow: 0 0 50px red;
+  width: 253px;
+  position: relative;
+  z-index: 99;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Kaydırma çubuğu genişliği */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Kaydırma çubuğu izleği arka plan rengi */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E50913; /* Kaydırma çubuğu başlık rengi */
+  border-radius: 6px; /* Kaydırma çubuğu başlık köşe yuvarlama */
+}
+
+aside {
+  background-color: rgba(20, 20, 20, 0.9);
+  position: fixed;
+  z-index: 99;
+  width: 0;
+  overflow: hidden;
+  height: calc(100vh - 67px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+aside > #aside-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+aside > #aside-content > a {
+  background-color: #E50913;
+  color: #141414;
+  font-size: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 200px;
+  padding: 5px 0;
+  margin: 8px 0;
+  text-decoration: none;
+  transition: 0.5s;
+}
+aside > #aside-content > a:hover {
+  background-color: rgba(229, 9, 19, 0.7);
+}
+
+.open {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 80px;
+  font-family: "Roboto", sans-serif;
+  background-color: #141414;
+  color: white;
+}
+
+.mt-68 {
+  margin-top: 68px;
+}/*# sourceMappingURL=index.css.map */

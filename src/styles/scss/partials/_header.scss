@@ -1,0 +1,60 @@
+header {
+    background-color: aqua;
+    height: 115vh;
+    width: 100%;
+    background-color: transparent;
+    background-image: url("https://million-wallpapers.com/wallpapers/5/63/445811478925978/a-group-of-people-from-a-hobbit-movie.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    & > div {
+        width: 50%;
+        margin: 0 80px;
+    }
+
+    & #header-control {
+        & > button {
+            margin: 4px;
+            padding: 8px 22px;
+            font-size: 20px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        & > #playBtn {
+            background-color: white;
+            color: $secondary-color;
+            font-weight: 600;
+            
+            &:hover {
+                background-color: rgba(white, $alpha: 0.7);
+            }
+        }
+        & > #infoBtn {
+            color: white;
+            background-color: rgba(120,120,120, $alpha: 0.7);
+            
+            &:hover {
+                background-color: rgba(120,120,120, $alpha: 0.5);
+            }
+        }
+    }
+}
+
+// Responsive
+@media screen and (max-width: 450px) {
+    header {
+        flex-direction: column;
+        height: 70vh;
+
+        & .header-content {
+            margin-top: 100px;
+            width: 80%;
+        }
+        & #group {
+            display: none;
+        }
+    }
+}
